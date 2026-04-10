@@ -1,19 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#121212">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Workout Music Selector"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Workout Intensity:"
+        android:textSize="18sp"
+        android:textColor="#E0E0E0"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgWorkoutTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="32dp">
+
+        <RadioButton
+            android:id="@+id/rbCardio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cardio (High Intensity)"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FF4081"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbStrength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Strength (Medium Intensity)"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FF4081"
+            android:padding="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbYoga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yoga (Low Intensity)"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:buttonTint="#FF4081"
+            android:padding="8dp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1E1E1E"
+        android:padding="16dp"
+        android:layout_marginBottom="32dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/tvPlaylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a workout to load playlist"
+            android:textSize="16sp"
+            android:textColor="#AAAAAA"
+            android:gravity="center"
+            android:minLines="3"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvCurrentTrack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Track Selected"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#00E676"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnPrev"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Prev"
+                android:backgroundTint="#333333"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnPlayPause"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:layout_marginHorizontal="8dp"
+                android:backgroundTint="#FF4081"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:backgroundTint="#333333"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

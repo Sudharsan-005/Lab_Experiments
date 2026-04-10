@@ -2,4 +2,34 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary palette -->
+    <color name="primary">#6C63FF</color>
+    <color name="primary_dark">#5A52D5</color>
+    <color name="primary_light">#B4B0FF</color>
+
+    <!-- Accent / Secondary -->
+    <color name="secondary">#03DAC6</color>
+    <color name="secondary_dark">#018786</color>
+
+    <!-- Surface colors -->
+    <color name="surface">#F8F9FE</color>
+    <color name="surface_dark">#1C1B2E</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="card_bg_dark">#2D2B45</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#1C1B2E</color>
+    <color name="text_secondary">#6E6D80</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Sensor type colors -->
+    <color name="sensor_motion">#FF6B6B</color>
+    <color name="sensor_environment">#4ECB71</color>
+    <color name="sensor_position">#45B7D1</color>
+    <color name="sensor_other">#FFA726</color>
+
+    <!-- Gradient colors -->
+    <color name="gradient_start">#6C63FF</color>
+    <color name="gradient_end">#B4B0FF</color>
 </resources>

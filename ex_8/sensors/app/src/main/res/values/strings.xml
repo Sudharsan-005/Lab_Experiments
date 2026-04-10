@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">sensors</string>
+    <string name="app_name">Sensor Explorer</string>
+    <string name="subtitle_main">Discover your device sensors</string>
+    <string name="no_sensors">No sensors found on this device</string>
+    <string name="sensor_detail_title">Sensor Detail</string>
+    <string name="label_vendor">Vendor</string>
+    <string name="label_version">Version</string>
+    <string name="label_max_range">Max Range</string>
+    <string name="label_resolution">Resolution</string>
+    <string name="label_power">Power</string>
+    <string name="label_live_data">Live Data</string>
+    <string name="label_value_x">X</string>
+    <string name="label_value_y">Y</string>
+    <string name="label_value_z">Z</string>
+    <string name="label_value_single">Value</string>
+    <string name="label_unit">Unit</string>
+    <string name="sensor_count">%d sensors found</string>
+    <string name="category_motion">Motion</string>
+    <string name="category_environment">Environment</string>
+    <string name="category_position">Position</string>
+    <string name="category_other">Other</string>
 </resources>
